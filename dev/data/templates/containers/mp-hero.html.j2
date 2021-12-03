@@ -1,0 +1,18 @@
+<div class="{{ container.type }}{% for class in container.classes %} {{ class }}{% endfor %}">
+  <div class="row">
+    <div class="col-12 div col-lg-10 mx-auto">
+      <div class="hero-wrapper text-center">
+        <h2>{{ container.content.h2 }} <a href="{{ container.content.a.href }}" class="btn">{{ container.content.a.text }}</a></h2>
+        <p>{{ container.content.p }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if container.content.bgImage %}
+<style>
+  .hero-container {
+    background: center / cover no-repeat url('{{ container.content.bgImage }}')
+  }
+</style>
+{% endif %}

@@ -1,0 +1,238 @@
+body {
+  //background-color: #111;
+  //color: #777;
+  //font-family: "neue-haas-grotesk-text";
+  //font-weight: 100;
+  //font-size: remcalc(12px);
+  //height: 100%;
+  //line-height: 1.5;
+  //width: 100%;
+}
+
+.header {
+  padding-top: remcalc(10);
+  padding-bottom: remcalc(10);
+  background-color: #005299;
+
+  @include media-breakpoint-up(md) {
+    padding-top: remcalc(12);
+    padding-bottom: remcalc(12);
+  }
+
+  p {
+    //font-family: Helvetica;
+    color: $white;
+    letter-spacing: 0;
+    font-size: remcalc(17);
+
+    @include media-breakpoint-up(md) {
+      font-size: remcalc(18px);
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+.hero-container {
+  background: center / cover no-repeat url('../images/hero-bg.jpg');
+  padding-top: remcalc(35);
+  padding-bottom: remcalc(35);
+  //min-height: remcalc(379);
+
+  @include media-breakpoint-up(md) {
+    padding-top: remcalc(96);
+    padding-bottom: remcalc(96);
+  }
+
+  h1 {
+    //font-family: PTSans-Bold;
+    font-weight: bold;
+    font-size: remcalc(28px);
+    color: $white;
+    letter-spacing: 0;
+    line-height: remcalc(18.84px);
+    margin-bottom: remcalc(20);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: remcalc(28);
+    }
+  }
+
+  p {
+    max-width: remcalc(882);
+    margin: 0 auto;
+    font-size: remcalc(20px);
+    color: $white;
+    letter-spacing: 0;
+    line-height: remcalc(26px);
+    margin-bottom: remcalc(14);
+
+    @include media-breakpoint-up(md) {
+      font-size: remcalc(28px);
+      line-height: remcalc(39px);
+    }
+
+    span {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    &:last-of-type {
+      margin-bottom: remcalc(39);
+    }
+  }
+
+  a {
+    font-weight: bold;
+    font-size: remcalc(20px);
+    color: $white;
+    padding: remcalc(12.25) remcalc(32);
+    line-height: 1.6rem;
+
+    @include media-breakpoint-up(md) {
+      padding: remcalc(14.5) remcalc(36.5);
+      font-size: remcalc(24);
+    }
+
+    .pre {
+      font-size: remcalc(16);
+    }
+  }
+}
+
+.sxs {
+  padding-top: remcalc(41);
+  padding-bottom: remcalc(43);
+
+  @include media-breakpoint-up(md) {
+    padding-top: remcalc(72);
+    padding-bottom: remcalc(75);
+  }
+
+  .side-wrapper {
+    margin-bottom: remcalc(47);
+
+    @extend .mx-auto;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      max-width: remcalc(432);
+    }
+  }
+
+  .image {
+    margin-bottom: remcalc(13.97);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: remcalc(21);
+    }
+
+    img {
+      min-height: remcalc(52.03);
+
+      @include media-breakpoint-up(md) {
+        min-height: remcalc(76);
+      }
+    }
+  }
+
+  p {
+    font-size: remcalc(24px);
+    color: $black;
+    letter-spacing: 0;
+    line-height: remcalc(34px);
+
+    span {
+      font-style: italic;
+      font-size: remcalc(19px);
+      color: $black;
+      letter-spacing: 0;
+      line-height: remcalc(24.66px);
+
+      @include media-breakpoint-up(md) {
+        font-style: italic;
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+.mp-hero-container {
+  background-color: #005299;
+  padding-top: remcalc(33.68);
+  padding-bottom: remcalc(30.32);
+
+  @include media-breakpoint-up(md) {
+    padding-top: remcalc(50);
+    padding-bottom: remcalc(49);
+  }
+
+  h2 {
+    font-size: remcalc(24px);
+    color: $white;
+    line-height: remcalc(20.18px);
+
+    @include media-breakpoint-up(md) {
+      font-size: remcalc(36);
+      line-height: remcalc(34);
+    }
+
+    a {
+      font-weight: bold;
+      font-size: remcalc(26);
+      color: $white;
+      line-height: remcalc(26px);
+
+      @include media-breakpoint-up(md) {
+        font-size: remcalc(36);
+        line-height: remcalc(34);
+      }
+    }
+  }
+
+  p {
+    font-size: remcalc(18px);
+    color: $white;
+    line-height: remcalc(26px);
+
+    @include media-breakpoint-up(md) {
+      font-size: remcalc(24px);
+      line-height: remcalc(39px);
+    }
+  }
+}
+
+.footer {
+  .top {
+    background-color: #1c1c1c;
+
+    p {
+      font-size: remcalc(16px);
+      margin-bottom: remcalc(0);
+      color: $white;
+      padding-top: remcalc(13);
+      padding-bottom: remcalc(13);
+    }
+  }
+
+  .bottom {
+    padding-top: remcalc(7);
+    padding-bottom: remcalc(7);
+
+    @include media-breakpoint-up(md) {
+      padding-top: remcalc(15);
+      padding-bottom: remcalc(15);
+    }
+
+    img {
+      max-height: remcalc(57);
+
+      @include media-breakpoint-up(md) {
+        max-height: remcalc(69);
+      }
+    }
+  }
+}

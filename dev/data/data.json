@@ -1,0 +1,39 @@
+{
+  "containers": [
+    {
+      "name": "hero",
+      "type":"container",
+      "classes": ["hero-container"],
+      "content": {
+        "h1": "Abortion Pill Reversal",
+        "span": "We're here for you!",
+        "p": "Have you taken the first dose of the abortion pill? Do you regret your decision and wish you could reverse the effects of the abortion pill?",
+        "a": {
+          "href": "#",
+          "span": "Find out more about",
+          "text": "Abortion Pill Reversal"
+          },
+        "bgImage": "images/hero-bg.jpg"
+      }
+    },
+    {
+      "name": "sxs",
+      "type":"container",
+      "classes": ["sxs-container"],
+      "content": {}
+    },
+    {
+      "name": "mp-hero",
+      "type":"container-fluid",
+      "classes": ["mp-hero-container"],
+      "content": {
+        "h2": "CALL OUR 24/7 HELPLINE: ",
+        "p": "We are eager to connect you with help and guidance.",
+        "a": {
+          "href": "tel:1-877-558-0333",
+          "text": "1-877-558-0333"
+        }
+      }
+    }
+  ]
+}
