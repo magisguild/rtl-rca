@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://reversechemicalabortion.com/sitemap.xml
+Host: https://reversechemicalabortion.com
